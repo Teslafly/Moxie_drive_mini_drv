@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DRV8353RS
+D 3 phase smart gate driver
+F http://www.ti.com/lit/ds/symlink/drv8353.pdf
+$ENDCMP
+#
+$CMP DRV8353RS_fixed
+D 3 phase smart gate driver
+F http://www.ti.com/lit/ds/symlink/drv8353.pdf
+$ENDCMP
+#
+#End Doc Library

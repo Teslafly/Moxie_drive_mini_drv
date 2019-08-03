@@ -1,0 +1,172 @@
+EESchema Schematic File Version 4
+LIBS:MoxiE_Control_board-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 9
+Title "BLDC Driver 4.11"
+Date "21 aug 2015"
+Rev "4.12"
+Comp "Benjamin Vedder"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MoxiE_Control_board-rescue:GND-power #PWR?
+U 1 1 53F59F97
+P 4800 4900
+AR Path="/53FFB6E1/53F59F97" Ref="#PWR?"  Part="1" 
+AR Path="/5B39743C/5B39780A/53F59F97" Ref="#PWR?"  Part="1" 
+AR Path="/5B39780A/53F59F97" Ref="#PWR0201"  Part="1" 
+F 0 "#PWR0201" H 4800 4900 30  0001 C CNN
+F 1 "GND" H 4800 4830 30  0001 C CNN
+F 2 "" H 4800 4900 60  0000 C CNN
+F 3 "" H 4800 4900 60  0000 C CNN
+	1    4800 4900
+	1    0    0    -1  
+$EndComp
+Text HLabel 5500 4200 2    60   Output ~ 0
+CAN_RX
+Text HLabel 5500 4100 2    60   Input ~ 0
+CAN_TX
+$Comp
+L MoxiE_Control_board-rescue:R-Device R?
+U 1 1 540030A8
+P 3850 4300
+AR Path="/53FFB6E1/540030A8" Ref="R?"  Part="1" 
+AR Path="/5B39743C/5B39780A/540030A8" Ref="R?"  Part="1" 
+AR Path="/5B39780A/540030A8" Ref="R201"  Part="1" 
+F 0 "R201" V 3930 4300 40  0000 C CNN
+F 1 "220R" V 3857 4301 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3780 4300 30  0001 C CNN
+F 3 "" H 3850 4300 30  0000 C CNN
+	1    3850 4300
+	1    0    0    -1  
+$EndComp
+Text HLabel 3600 4050 0    60   Input ~ 0
+CANH
+Text HLabel 3600 4550 0    60   Input ~ 0
+CANL
+Wire Wire Line
+	4100 4550 4100 4400
+Wire Wire Line
+	4100 4400 4350 4400
+Wire Wire Line
+	4350 4200 4100 4200
+Wire Wire Line
+	4100 4200 4100 4050
+$Comp
+L MoxiE_Control_board-rescue:GND-power #PWR?
+U 1 1 5400318B
+P 5450 4900
+AR Path="/53FFB6E1/5400318B" Ref="#PWR?"  Part="1" 
+AR Path="/5B39743C/5B39780A/5400318B" Ref="#PWR?"  Part="1" 
+AR Path="/5B39780A/5400318B" Ref="#PWR0205"  Part="1" 
+F 0 "#PWR0205" H 5450 4900 30  0001 C CNN
+F 1 "GND" H 5450 4830 30  0001 C CNN
+F 2 "" H 5450 4900 60  0000 C CNN
+F 3 "" H 5450 4900 60  0000 C CNN
+	1    5450 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4550 3850 4550
+Wire Wire Line
+	3600 4050 3850 4050
+Wire Wire Line
+	3850 4150 3850 4050
+Connection ~ 3850 4050
+Wire Wire Line
+	3850 4050 4100 4050
+Wire Wire Line
+	3850 4450 3850 4550
+Connection ~ 3850 4550
+Wire Wire Line
+	3850 4550 4100 4550
+Wire Wire Line
+	5450 4500 5350 4500
+Wire Wire Line
+	5450 4500 5450 4900
+$Comp
+L MoxiE_Control_board-rescue:GND-power #PWR?
+U 1 1 5AF06904
+P 6100 4900
+AR Path="/53FFB6E1/5AF06904" Ref="#PWR?"  Part="1" 
+AR Path="/5B39743C/5B39780A/5AF06904" Ref="#PWR?"  Part="1" 
+AR Path="/5B39780A/5AF06904" Ref="#PWR0207"  Part="1" 
+F 0 "#PWR0207" H 6100 4900 30  0001 C CNN
+F 1 "GND" H 6100 4830 30  0001 C CNN
+F 2 "" H 6100 4900 60  0000 C CNN
+F 3 "" H 6100 4900 60  0000 C CNN
+	1    6100 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4900 6100 4800
+$Comp
+L MoxiE_Control_board-rescue:C-Device C?
+U 1 1 5AF0D22C
+P 6100 4650
+AR Path="/53FFB6E1/5AF0D22C" Ref="C?"  Part="1" 
+AR Path="/5B39743C/5B39780A/5AF0D22C" Ref="C?"  Part="1" 
+AR Path="/5B39780A/5AF0D22C" Ref="C202"  Part="1" 
+F 0 "C202" H 6215 4696 50  0000 L CNN
+F 1 "100nf" H 6215 4605 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6138 4500 50  0001 C CNN
+F 3 "~" H 6100 4650 50  0001 C CNN
+	1    6100 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L MoxiE_drive-cache:+3.3V #PWR?
+U 1 1 5AF0DBD6
+P 6100 4300
+AR Path="/53FFB6E1/5AF0DBD6" Ref="#PWR?"  Part="1" 
+AR Path="/5B39743C/5B39780A/5AF0DBD6" Ref="#PWR?"  Part="1" 
+AR Path="/5B39780A/5AF0DBD6" Ref="#PWR0206"  Part="1" 
+F 0 "#PWR0206" H 6100 4150 50  0001 C CNN
+F 1 "+3.3V" H 6115 4473 50  0000 C CNN
+F 2 "" H 6100 4300 50  0001 C CNN
+F 3 "" H 6100 4300 50  0001 C CNN
+	1    6100 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MoxiE_drive_symbol_lib:MCP2551-I IC?
+U 1 1 5EC18606
+P 4800 4300
+F 0 "IC?" H 4800 4926 40  0000 C CNN
+F 1 "MCP2551-I" H 4800 4850 40  0000 C CNN
+F 2 "SO8" H 4800 4778 35  0000 C CIN
+F 3 "" H 4800 4300 60  0000 C CNN
+	1    4800 4300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4700 4800 4900
+Wire Wire Line
+	5250 4100 5500 4100
+Wire Wire Line
+	5250 4200 5500 4200
+Wire Wire Line
+	6100 4300 6100 4500
+$Comp
+L MoxiE_drive-cache:+3.3V #PWR?
+U 1 1 5EC194DA
+P 4800 3600
+AR Path="/53FFB6E1/5EC194DA" Ref="#PWR?"  Part="1" 
+AR Path="/5B39743C/5B39780A/5EC194DA" Ref="#PWR?"  Part="1" 
+AR Path="/5B39780A/5EC194DA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4800 3450 50  0001 C CNN
+F 1 "+3.3V" H 4815 3773 50  0000 C CNN
+F 2 "" H 4800 3600 50  0001 C CNN
+F 3 "" H 4800 3600 50  0001 C CNN
+	1    4800 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3600 4800 3900
+$EndSCHEMATC

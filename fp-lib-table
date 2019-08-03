@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Locals)(type KiCad)(uri ${KIPRJMOD}/Locals.pretty)(options "")(descr ""))
+  (lib (name moxie-drive-custom)(type KiCad)(uri ${KICAD_CUSTOM_LIBS}/Footprints/moxie-drive-custom.pretty)(options "")(descr ""))
+)
