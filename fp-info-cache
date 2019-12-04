@@ -1,295 +1,148 @@
-1564724674297
-Resistors_SMD
-R_0201
+32164373351582
+moxie-drive-custom
+5.5mm edge bullet
 
 
 0
-0
-0
-Resistors_SMD
-R_0201_NoSilk
-
-
-0
-0
-0
-Resistors_SMD
-R_0402
-
-
-0
-0
-0
-Resistors_SMD
-R_0402_NoSilk
-
-
-0
-0
-0
-Resistors_SMD
-R_0603
-
-
-0
-0
-0
-Resistors_SMD
-R_0603_HandSoldering
-
-
-0
-0
-0
-Resistors_SMD
-R_0612
-
-
-0
-0
-0
-Resistors_SMD
-R_0805
-
-
-0
-0
-0
-Resistors_SMD
-R_0805_HandSoldering
-
-
-0
-0
-0
-Resistors_SMD
-R_1206
-
-
-0
-0
-0
-Resistors_SMD
-R_1206_HandSoldering
-
-
-0
-0
-0
-Resistors_SMD
-R_1210
-
-
-0
-0
-0
-Resistors_SMD
-R_1210_HandSoldering
-
-
-0
-0
-0
-Resistors_SMD
-R_1218
-
-
-0
-0
-0
-Resistors_SMD
-R_1218_HandSoldering
-
-
-0
-0
-0
-Resistors_SMD
-R_1508_Wide
-
-
-0
-0
-0
-Resistors_SMD
-R_1812
-
+1
+1
+moxie-drive-custom
+ACS711KEX
 
-0
-0
-0
-Resistors_SMD
-R_1812_HandSoldering
-
-
-0
-0
-0
-Resistors_SMD
-R_2010
-
-
-0
-0
-0
-Resistors_SMD
-R_2010_HandSoldering
-
-
-0
-0
-0
-Resistors_SMD
-R_2512
-
-
-0
-0
-0
-Resistors_SMD
-R_2512_HandSoldering
-
-
-0
-0
-0
-Resistors_SMD
-R_2816
-
-
-0
-0
-0
-Resistors_SMD
-R_2816_HandSoldering
-
-
-0
-0
-0
-Resistors_SMD
-R_Array_Concave_2x0603
-
 
 0
+10
+6
+moxie-drive-custom
+CP_Radial_D12.5mm_P5.00mm
+CP, Radial series, Radial, pin pitch=5.00mm, , diameter=12.5mm, Electrolytic Capacitor
+CP Radial series Radial pin pitch 5.00mm  diameter 12.5mm Electrolytic Capacitor
 0
+2
+2
+moxie-drive-custom
+CP_Radial_D12.5mm_P5.00mm_horiz
+CP, Radial series, Radial, pin pitch=5.00mm, , diameter=12.5mm, Electrolytic Capacitor
+CP Radial series Radial pin pitch 5.00mm  diameter 12.5mm Electrolytic Capacitor
 0
-Resistors_SMD
-R_Array_Concave_4x0402
+2
+2
+moxie-drive-custom
+DRV8353RHRGZR
 
 
 0
-0
-0
-Resistors_SMD
-R_Array_Concave_4x0603
-
-
-0
-0
-0
-Resistors_SMD
-R_Array_Convex_2x0402
-
-
-0
-0
-0
-Resistors_SMD
-R_Array_Convex_2x0603
-
-
-0
-0
-0
-Resistors_SMD
-R_Array_Convex_2x1206
+61
+49
+moxie-drive-custom
+FLE-113-01-G-DV
 
 
 0
-0
-0
-Resistors_SMD
-R_Array_Convex_4x0402
+26
+26
+moxie-drive-custom
+FTSH-113-01-F-DV
 
 
-0
 0
-0
-Resistors_SMD
-R_Array_Convex_4x0603
+26
+26
+moxie-drive-custom
+JAE_TX24-30R-6ST-N1E
 
 
-0
 0
-0
-Resistors_SMD
-R_Array_Convex_4x1206
+30
+30
+moxie-drive-custom
+LFPAK56
 
 
 0
+6
+3
+moxie-drive-custom
+L_Bourns_SRN-4018
+Inductor, Taiyo Yuden, MD series, Taiyo-Yuden_MD-4040, 4.0mmx4.0mm
+inductor taiyo-yuden md smd
 0
-0
-Resistors_SMD
-R_Array_Convex_5x0603
+2
+2
+moxie-drive-custom
+L_CoilCraft_MSS1583
 
 
-0
 0
-0
-Resistors_SMD
-R_Array_Convex_5x1206
+2
+2
+moxie-drive-custom
+PG-HSOF-8
 
 
-0
 0
+12
+3
+moxie-drive-custom
+R_2512_shunt_vishay
+Resistor SMD 2512, reflow soldering, Vishay (see dcrcw.pdf)
+resistor 2512
 0
-Resistors_SMD
-R_Array_Convex_8x0602
+2
+2
+moxie-drive-custom
+SO8-E
 
 
 0
-0
-0
-Resistors_SMD
-R_Cat16-2
+9
+9
+moxie-drive-custom
+SOIC-10
 
 
-0
 0
-0
-Resistors_SMD
-R_Cat16-4
+11
+11
+moxie-drive-custom
+SOIC-14
 
 
-0
 0
-0
-Resistors_SMD
-R_Cat16-8
+14
+14
+moxie-drive-custom
+SOIC-26
 
 
-0
-0
 0
-Resistors_SMD
-R_MELF_MMB-0207
+26
+26
+moxie-drive-custom
+SOP8_Advance
 
 
 0
-0
-0
-Resistors_SMD
-R_MicroMELF_MMU-0102
+9
+3
+moxie-drive-custom
+TDFN2525-10ld
 
 
 0
+11
+11
+moxie-drive-custom
+TDSON-8-1
+Power MOSFET package, TDSON-8-1, SuperS08, SON-8_5x6mm
+tdson 
 0
-0
-Resistors_SMD
-R_MiniMELF_MMA-0204
+9
+3
+moxie-drive-custom
+large_wire_pad
 
 
-0
-0
 0
+1
+1

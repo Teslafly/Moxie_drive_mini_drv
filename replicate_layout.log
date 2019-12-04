@@ -1,0 +1,79 @@
+11-20 00:50:50 replicate_layout.action_replicate_layout 159:Replicate layout plugin version: 34 started
+11-20 00:50:50 replicate_layout.action_replicate_layout 191:Preparing replicator with Q802 as a reference
+11-20 00:50:50 replicate_layout.replicatelayout 183:getting project hierarchy from schematics
+11-20 00:50:50 replicate_layout.replicatelayout 185:Project hierarchy looks like:
+{'5E2EE3A5': ['power_phase_A', u'C:\\Users\\Marshall\\Google Drive\\hardware design\\motor controller design\\Moxie_drive\\moxie_drive Schematic\\Moxie_drive_mini_drv_git\\power_phase.sch'], '5D44BA97': ['drv_power_stage', u'C:\\Users\\Marshall\\Google Drive\\hardware design\\motor controller design\\Moxie_drive\\moxie_drive Schematic\\Moxie_drive_mini_drv_git\\power_stage.sch'], '5B397924': ['Microcontroller', u'C:\\Users\\Marshall\\Google Drive\\hardware design\\motor controller design\\Moxie_drive\\moxie_drive Schematic\\Moxie_drive_mini_drv_git\\mcu.sch'], '5E9BA783': ['power_phase_C', u'C:\\Users\\Marshall\\Google Drive\\hardware design\\motor controller design\\Moxie_drive\\moxie_drive Schematic\\Moxie_drive_mini_drv_git\\power_phase.sch'], '5D7BA469': ['NRF/Bluetooth', u'C:\\Users\\Marshall\\Google Drive\\hardware design\\motor controller design\\Moxie_drive\\moxie_drive Schematic\\Moxie_drive_mini_drv_git\\nrf_bluetooth.sch'], '5B39780A': ['CAN_tranciever', u'C:\\Users\\Marshall\\Google Drive\\hardware design\\motor controller design\\Moxie_drive\\moxie_drive Schematic\\Moxie_drive_mini_drv_git\\CAN.sch'], '5B3979B7': ['logic_power', u'C:\\Users\\Marshall\\Google Drive\\hardware design\\motor controller design\\Moxie_drive\\moxie_drive Schematic\\Moxie_drive_mini_drv_git\\logic_supply.sch'], '5E9B1649': ['power_phase_B', u'C:\\Users\\Marshall\\Google Drive\\hardware design\\motor controller design\\Moxie_drive\\moxie_drive Schematic\\Moxie_drive_mini_drv_git\\power_phase.sch']}
+11-20 00:50:50 replicate_layout.replicatelayout 193:getting a list of all footprints on board
+11-20 00:50:50 replicate_layout.action_replicate_layout 217:Pivot footprint is u'Q802'
+Located on:['drv_power_stage', 'power_phase_A']
+With filenames:[u'power_stage.sch', u'power_phase.sch']
+With sheet_id:['drv_power_stage', 'power_phase_A']
+11-20 00:50:50 replicate_layout.action_replicate_layout 221:Corresponding footprints are 
+[(u'Q602', ['drv_power_stage', 'power_phase_B']), (u'Q802', ['drv_power_stage', 'power_phase_A']), (u'Q702', ['drv_power_stage', 'power_phase_C'])]
+11-20 00:50:50 replicate_layout.action_replicate_layout 234:Showing dialog
+11-20 00:50:53 replicate_layout.replicatelayout 220:construcing a list of sheets suitable for replication on level:'drv_power_stage', file:u'power_stage.sch'
+11-20 00:50:53 replicate_layout.replicatelayout 227:Sheet ids up to the level:['drv_power_stage']
+11-20 00:50:53 replicate_layout.replicatelayout 231:Footprints on the sheets:
+[u'Q602', u'Q802', u'Q702']
+11-20 00:50:53 replicate_layout.replicatelayout 234:Footprints raw sheet ids:
+[u'/5D44BA97/5E9B1649/5E33AAAA', u'/5D44BA97/5E2EE3A5/5E33AAAA', u'/5D44BA97/5E9BA783/5E33AAAA']
+11-20 00:50:53 replicate_layout.replicatelayout 250:All sheets to replicate:
+[['drv_power_stage'], ['drv_power_stage'], ['drv_power_stage']]
+11-20 00:50:53 replicate_layout.replicatelayout 255:All sheets to replicate sorted:
+[['drv_power_stage']]
+11-20 00:50:53 replicate_layout.replicatelayout 261:All sheets to replicate sorted and without pivot_sheet:
+[]
+11-20 00:50:54 replicate_layout.replicatelayout 220:construcing a list of sheets suitable for replication on level:'power_phase_A', file:u'power_phase.sch'
+11-20 00:50:54 replicate_layout.replicatelayout 227:Sheet ids up to the level:['drv_power_stage', 'power_phase_A']
+11-20 00:50:54 replicate_layout.replicatelayout 231:Footprints on the sheets:
+[u'Q602', u'Q802', u'Q702']
+11-20 00:50:54 replicate_layout.replicatelayout 234:Footprints raw sheet ids:
+[u'/5D44BA97/5E9B1649/5E33AAAA', u'/5D44BA97/5E2EE3A5/5E33AAAA', u'/5D44BA97/5E9BA783/5E33AAAA']
+11-20 00:50:54 replicate_layout.replicatelayout 250:All sheets to replicate:
+[['drv_power_stage', 'power_phase_B'], ['drv_power_stage', 'power_phase_A'], ['drv_power_stage', 'power_phase_C']]
+11-20 00:50:54 replicate_layout.replicatelayout 255:All sheets to replicate sorted:
+[['drv_power_stage', 'power_phase_A'], ['drv_power_stage', 'power_phase_B'], ['drv_power_stage', 'power_phase_C']]
+11-20 00:50:54 replicate_layout.replicatelayout 261:All sheets to replicate sorted and without pivot_sheet:
+[['drv_power_stage', 'power_phase_B'], ['drv_power_stage', 'power_phase_C']]
+11-20 00:50:56 replicate_layout.replicatelayout 220:construcing a list of sheets suitable for replication on level:'drv_power_stage', file:u'power_stage.sch'
+11-20 00:50:56 replicate_layout.replicatelayout 227:Sheet ids up to the level:['drv_power_stage']
+11-20 00:50:56 replicate_layout.replicatelayout 231:Footprints on the sheets:
+[u'Q602', u'Q802', u'Q702']
+11-20 00:50:56 replicate_layout.replicatelayout 234:Footprints raw sheet ids:
+[u'/5D44BA97/5E9B1649/5E33AAAA', u'/5D44BA97/5E2EE3A5/5E33AAAA', u'/5D44BA97/5E9BA783/5E33AAAA']
+11-20 00:50:56 replicate_layout.replicatelayout 250:All sheets to replicate:
+[['drv_power_stage'], ['drv_power_stage'], ['drv_power_stage']]
+11-20 00:50:56 replicate_layout.replicatelayout 255:All sheets to replicate sorted:
+[['drv_power_stage']]
+11-20 00:50:56 replicate_layout.replicatelayout 261:All sheets to replicate sorted and without pivot_sheet:
+[]
+11-20 00:50:59 replicate_layout.replicatelayout 220:construcing a list of sheets suitable for replication on level:'drv_power_stage', file:u'power_stage.sch'
+11-20 00:50:59 replicate_layout.replicatelayout 227:Sheet ids up to the level:['drv_power_stage']
+11-20 00:50:59 replicate_layout.replicatelayout 231:Footprints on the sheets:
+[u'Q602', u'Q802', u'Q702']
+11-20 00:50:59 replicate_layout.replicatelayout 234:Footprints raw sheet ids:
+[u'/5D44BA97/5E9B1649/5E33AAAA', u'/5D44BA97/5E2EE3A5/5E33AAAA', u'/5D44BA97/5E9BA783/5E33AAAA']
+11-20 00:50:59 replicate_layout.replicatelayout 250:All sheets to replicate:
+[['drv_power_stage'], ['drv_power_stage'], ['drv_power_stage']]
+11-20 00:50:59 replicate_layout.replicatelayout 255:All sheets to replicate sorted:
+[['drv_power_stage']]
+11-20 00:50:59 replicate_layout.replicatelayout 261:All sheets to replicate sorted and without pivot_sheet:
+[]
+11-20 00:50:59 replicate_layout.action_replicate_layout 268:Replicating layout
+11-20 00:50:59 replicate_layout.replicatelayout 883:Starting replication of sheets: []
+on level: ['drv_power_stage']
+with tracks=True, zone=True, text=True, containing=True, remov=False
+11-20 00:50:59 replicate_layout.replicatelayout 516:Getting the list of pivot footprints
+11-20 00:50:59 replicate_layout.replicatelayout 519:Getting the list of all the remaining footprints
+11-20 00:50:59 replicate_layout.replicatelayout 522:Getting nets local to pivot footprints
+11-20 00:50:59 replicate_layout.replicatelayout 525:Getting pivot bounding box
+11-20 00:50:59 replicate_layout.replicatelayout 528:Getting pivot tracks
+11-20 00:50:59 replicate_layout.replicatelayout 531:Getting pivot zones
+11-20 00:50:59 replicate_layout.replicatelayout 534:Getting pivot text items
+11-20 00:50:59 replicate_layout.replicatelayout 537:Getting pivot text items
+11-20 00:50:59 replicate_layout.replicatelayout 541:Replicating footprints
+11-20 00:50:59 replicate_layout.replicatelayout 651:Replicating tracks
+11-20 00:50:59 replicate_layout.replicatelayout 694:Replicating zones
+11-20 00:50:59 replicate_layout.replicatelayout 750:Replicating text
+11-20 00:50:59 replicate_layout.replicatelayout 771:Replicating drawings
+11-20 00:50:59 replicate_layout.action_replicate_layout 278:Replication complete
