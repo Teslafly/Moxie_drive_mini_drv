@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 11
+Sheet 9 10
 Title ""
 Date ""
 Rev ""
@@ -51,16 +51,16 @@ $EndComp
 $Comp
 L MoxiE_Control_board-rescue:Conn_01x04-Connector_Generic P?
 U 1 1 5DE81D3D
-P 5000 3250
+P 5000 3150
 AR Path="/5DE81D3D" Ref="P?"  Part="1" 
 AR Path="/5B39743C/5DE81D3D" Ref="P?"  Part="1" 
 AR Path="/5D7BA469/5DE81D3D" Ref="P901"  Part="1" 
-F 0 "P901" H 5000 3000 50  0000 C CNN
-F 1 "I2C" H 5000 3500 40  0000 C CNN
-F 2 "Connectors_JST:JST_SH_BM04B-SRSS-TB_04x1.00mm_Straight" H 5000 3300 60  0001 C CNN
-F 3 "" H 5000 3300 60  0000 C CNN
-	1    5000 3250
-	-1   0    0    1   
+F 0 "P901" H 5000 2900 50  0000 C CNN
+F 1 "I2C" H 5000 3400 40  0000 C CNN
+F 2 "Connectors_JST:JST_SH_BM04B-SRSS-TB_04x1.00mm_Straight" H 5000 3200 60  0001 C CNN
+F 3 "" H 5000 3200 60  0000 C CNN
+	1    5000 3150
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	5200 3250 6150 3250

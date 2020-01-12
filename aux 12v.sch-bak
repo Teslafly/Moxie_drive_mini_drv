@@ -70,17 +70,6 @@ F 3 "" H 3650 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:ADP7142AUZJ U1001
-U 1 1 5E1972FD
-P 4150 3450
-F 0 "U1001" H 4150 3817 50  0000 C CNN
-F 1 "ADP7142AUZJ" H 4150 3726 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 4150 3050 50  0001 C CIN
-F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/ADP7142.pdf" H 4150 2950 50  0001 C CNN
-	1    4150 3450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x02 J1001
 U 1 1 5E1977C8
 P 5750 3350

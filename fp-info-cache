@@ -1,148 +1,141 @@
-32164373351582
-moxie-drive-custom
-5.5mm edge bullet
-
-
-0
-1
-1
-moxie-drive-custom
-ACS711KEX
-
-
-0
-10
-6
-moxie-drive-custom
-CP_Radial_D12.5mm_P5.00mm
-CP, Radial series, Radial, pin pitch=5.00mm, , diameter=12.5mm, Electrolytic Capacitor
-CP Radial series Radial pin pitch 5.00mm  diameter 12.5mm Electrolytic Capacitor
+31163094029488
+pkl_dipol
+C_0201
+Capacitor SMD 0201, reflow soldering
+capacitor 0201
 0
 2
 2
-moxie-drive-custom
-CP_Radial_D12.5mm_P5.00mm_horiz
-CP, Radial series, Radial, pin pitch=5.00mm, , diameter=12.5mm, Electrolytic Capacitor
-CP Radial series Radial pin pitch 5.00mm  diameter 12.5mm Electrolytic Capacitor
+pkl_dipol
+C_0402
+Capacitor SMD 0402, reflow soldering
+capacitor 0402
 0
 2
 2
-moxie-drive-custom
-DRV8353RHRGZR
-
-
-0
-61
-49
-moxie-drive-custom
-FLE-113-01-G-DV
-
-
-0
-26
-26
-moxie-drive-custom
-FTSH-113-01-F-DV
-
-
-0
-26
-26
-moxie-drive-custom
-JAE_TX24-30R-6ST-N1E
-
-
-0
-30
-30
-moxie-drive-custom
-LFPAK56
-
-
-0
-6
-3
-moxie-drive-custom
-L_Bourns_SRN-4018
-Inductor, Taiyo Yuden, MD series, Taiyo-Yuden_MD-4040, 4.0mmx4.0mm
-inductor taiyo-yuden md smd
+pkl_dipol
+C_0603
+Capacitor SMD 0603, reflow soldering
+capacitor 0603
 0
 2
 2
-moxie-drive-custom
-L_CoilCraft_MSS1583
-
-
+pkl_dipol
+C_0805
+Capacitor SMD 0805, reflow soldering
+capacitor 0805
 0
 2
 2
-moxie-drive-custom
-PG-HSOF-8
-
-
-0
-12
-3
-moxie-drive-custom
-R_2512_shunt_vishay
-Resistor SMD 2512, reflow soldering, Vishay (see dcrcw.pdf)
-resistor 2512
+pkl_dipol
+C_1206
+Capacitor SMD 1206, reflow soldering
+capacitor 1206
 0
 2
 2
-moxie-drive-custom
-SO8-E
-
-
+pkl_dipol
+C_1210
+Capacitor SMD 1218, reflow soldering
+capacitor 1218
 0
-9
-9
-moxie-drive-custom
-SOIC-10
-
-
+2
+2
+pkl_dipol
+C_1218
+Capacitor SMD 1218, reflow soldering
+capacitor 1218
 0
-11
-11
-moxie-drive-custom
-SOIC-14
-
-
+2
+2
+pkl_dipol
+C_2010
+Capacitor SMD 2010, reflow soldering
+capacitor 2010
 0
-14
-14
-moxie-drive-custom
-SOIC-26
-
-
+2
+2
+pkl_dipol
+C_2512
+Capacitor SMD 2512, reflow soldering
+capacitor 2512
 0
-26
-26
-moxie-drive-custom
-SOP8_Advance
-
-
+2
+2
+pkl_dipol
+C_XH414HG-IV01E
+Super Capacitor SMD Coin IV01E, reflow soldering
+super capacitor IV01E
 0
-9
-3
-moxie-drive-custom
-TDFN2525-10ld
-
-
+2
+2
+pkl_dipol
+D_0402
+Diode SMD 0402, reflow soldering
+diode led 0402
 0
-11
-11
-moxie-drive-custom
-TDSON-8-1
-Power MOSFET package, TDSON-8-1, SuperS08, SON-8_5x6mm
-tdson 
+2
+2
+pkl_dipol
+D_0603
+Diode SMD 0603, reflow soldering
+diode led 0603
 0
-9
-3
-moxie-drive-custom
-large_wire_pad
-
-
+2
+2
+pkl_dipol
+D_0603_Side
+Diode SMD 0603 Side
+diode led 0603
 0
-1
-1
+2
+2
+pkl_dipol
+L_0402
+Inductor SMD 0402, reflow soldering
+inductor 0402
+0
+2
+2
+pkl_dipol
+L_0603
+Inductor SMD 0603, reflow soldering
+inductor 0603
+0
+2
+2
+pkl_dipol
+R_0402
+Resistor SMD 0402, reflow soldering
+resistor 0402
+0
+2
+2
+pkl_dipol
+R_0603
+Resistor SMD 0603, reflow soldering
+resistor 0603
+0
+2
+2
+pkl_dipol
+R_Array_Concave_4x0603
+Thick Film Chip Resistor Array, Wave soldering, Vishay CRA06P (see cra06p.pdf)
+resistor array
+0
+8
+8
+pkl_dipol
+R_Array_Convex_4x0402
+Thick Film Chip Resistor Array, Wave soldering, Vishay CRA06P (see cra06p.pdf)
+resistor array
+0
+8
+8
+pkl_dipol
+SC_1210
+Super Capacitor SMD 1210
+capacitor 1210
+0
+2
+2

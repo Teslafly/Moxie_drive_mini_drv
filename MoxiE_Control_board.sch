@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 11
+Sheet 1 10
 Title ""
 Date ""
 Rev ""
@@ -386,87 +386,8 @@ Text HLabel 3150 3550 2    50   Output ~ 0
 SCL_RX
 Wire Wire Line
 	2650 2200 2800 2200
-$Comp
-L MoxiE_Control_board-rescue:Conn_01x04-Connector_Generic P104
-U 1 1 5B39792A
-P 3550 3450
-AR Path="/5B39792A" Ref="P104"  Part="1" 
-AR Path="/5B39743C/5B39792A" Ref="P?"  Part="1" 
-F 0 "P104" H 3550 3200 50  0000 C CNN
-F 1 "I2C" H 3550 3700 40  0000 C CNN
-F 2 "Connectors_JST:JST_SH_BM04B-SRSS-TB_04x1.00mm_Straight" H 3550 3500 60  0001 C CNN
-F 3 "" H 3550 3500 60  0000 C CNN
-	1    3550 3450
-	-1   0    0    1   
-$EndComp
-$Comp
-L MoxiE_Control_board-rescue:R-Device R104
-U 1 1 5B397933
-P 3750 4150
-AR Path="/5B397933" Ref="R104"  Part="1" 
-AR Path="/5B39743C/5B397933" Ref="R?"  Part="1" 
-F 0 "R104" H 3820 4196 50  0000 L CNN
-F 1 "100kΩ" H 3820 4105 50  0000 L CNN
-F 2 "pkl_dipol:R_0402" V 3680 4150 50  0001 C CNN
-F 3 "~" H 3750 4150 50  0001 C CNN
-	1    3750 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L MoxiE_Control_board-rescue:R-Device R103
-U 1 1 5B39793A
-P 3400 4150
-AR Path="/5B39793A" Ref="R103"  Part="1" 
-AR Path="/5B39743C/5B39793A" Ref="R?"  Part="1" 
-F 0 "R103" H 3470 4196 50  0000 L CNN
-F 1 "100kΩ" H 3470 4105 50  0000 L CNN
-F 2 "pkl_dipol:R_0402" V 3330 4150 50  0001 C CNN
-F 3 "~" H 3400 4150 50  0001 C CNN
-	1    3400 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L MoxiE_Control_board-rescue:GND-power #PWR0108
-U 1 1 5B397941
-P 3400 4300
-AR Path="/5B397941" Ref="#PWR0108"  Part="1" 
-AR Path="/5B39743C/5B397941" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0108" H 3400 4300 30  0001 C CNN
-F 1 "GND" H 3400 4230 30  0001 C CNN
-F 2 "" H 3400 4300 60  0001 C CNN
-F 3 "" H 3400 4300 60  0001 C CNN
-	1    3400 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L MoxiE_Control_board-rescue:GND-power #PWR0113
-U 1 1 5B397947
-P 3750 4300
-AR Path="/5B397947" Ref="#PWR0113"  Part="1" 
-AR Path="/5B39743C/5B397947" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0113" H 3750 4300 30  0001 C CNN
-F 1 "GND" H 3750 4230 30  0001 C CNN
-F 2 "" H 3750 4300 60  0001 C CNN
-F 3 "" H 3750 4300 60  0001 C CNN
-	1    3750 4300
-	1    0    0    -1  
-$EndComp
-Text Notes 4000 4200 0    50   ~ 0
+Text Notes 3650 4550 0    50   ~ 0
 Throttle pulldown \nresistors
-Wire Wire Line
-	2650 3800 3400 3800
-Wire Wire Line
-	2650 3900 3750 3900
-Wire Wire Line
-	3400 4000 3400 3800
-Connection ~ 3400 3800
-Wire Wire Line
-	3750 4000 3750 3900
-Connection ~ 3750 3900
-Wire Wire Line
-	3400 3800 4700 3800
-Wire Wire Line
-	3750 3900 4700 3900
 Wire Wire Line
 	4700 4550 3150 4550
 Wire Wire Line
@@ -557,14 +478,6 @@ U 5B3979B7
 F0 "logic_power" 50
 F1 "logic_supply.sch" 50
 $EndSheet
-Text HLabel 4600 4400 0    50   Output ~ 0
-12vbuck_SENSE
-Wire Wire Line
-	4600 4400 4700 4400
-Wire Wire Line
-	4700 4300 4600 4300
-Text HLabel 4600 4300 0    50   Input ~ 0
-12v_buck_trim
 Text Notes 2150 1950 0    50   ~ 0
 2mm
 Text Notes 3250 3300 0    50   ~ 0
@@ -683,24 +596,26 @@ F23 "PHASE_CURRENT_1_ADC" I R 6450 2650 50
 F24 "PHASE_CURRENT_2_ADC" I R 6450 2750 50 
 F25 "PHASE_CURRENT_3_ADC" I R 6450 2850 50 
 F26 "ADC_VBUS" I R 6450 4200 60 
-F27 "reverse_sw" O L 4700 4550 50 
-F28 "SDA_2" O L 4700 3450 50 
-F29 "SCL_2" O L 4700 3550 50 
-F30 "USART3_RX" I L 4700 3100 50 
-F31 "USART3_TX" I L 4700 3000 50 
-F32 "USART1_RX" I L 4700 2750 50 
-F33 "USART1_TX" I L 4700 2650 50 
-F34 "SPI3_MOSI" I L 4700 5400 50 
-F35 "SPI3_SCK" I L 4700 5600 50 
-F36 "SPI3_MISO" I L 4700 5500 50 
-F37 "AUX1_PWM" I L 4700 5900 50 
-F38 "AUX2_PWM" I L 4700 6000 50 
-F39 "DAC1_ADC" I L 4700 4300 50 
-F40 "DAC2_ADC" I L 4700 4400 50 
-F41 "SPI3_NSS" I L 4700 5700 50 
-F42 "ADC_THROTTLE" O L 4700 3800 50 
-F43 "ADC_BRAKE" O L 4700 3900 50 
-F44 "BRAKE_SW" O L 4700 4650 50 
+F27 "SDA_2" O L 4700 3450 50 
+F28 "SCL_2" O L 4700 3550 50 
+F29 "USART3_RX" I L 4700 3100 50 
+F30 "USART3_TX" I L 4700 3000 50 
+F31 "USART1_RX" I L 4700 2750 50 
+F32 "USART1_TX" I L 4700 2650 50 
+F33 "SPI3_MOSI" I L 4700 5400 50 
+F34 "SPI3_SCK" I L 4700 5600 50 
+F35 "SPI3_MISO" I L 4700 5500 50 
+F36 "AUX1_PWM" I L 4700 5900 50 
+F37 "AUX2_PWM" I L 4700 6000 50 
+F38 "SPI3_NSS" I L 4700 5700 50 
+F39 "ADC_THROTTLE" O L 4700 3800 50 
+F40 "ADC_BRAKE" O L 4700 3900 50 
+F41 "BRAKE_SW" O L 4700 4650 50 
+F42 "LED_RED" O R 6450 5950 50 
+F43 "LED_GREEN" O R 6450 5850 50 
+F44 "BOOT_0" I R 6450 6050 50 
+F45 "gdrv_vsense" I R 6450 4500 50 
+F46 "REVERSE_SW" O L 4700 4550 50 
 $EndSheet
 $Comp
 L MoxiE_Control_board-rescue:R-Device R101
@@ -745,8 +660,6 @@ Wire Wire Line
 	8100 3800 8000 3800
 Wire Wire Line
 	8000 3800 8000 4300
-Text Notes 8100 4150 0    50   ~ 0
-voltage sense pins dont appear to need filters?
 Text Notes 2000 4750 0    50   ~ 0
 does servo need timer?\nshould do analog in too
 Wire Wire Line
@@ -765,25 +678,6 @@ Wire Wire Line
 	6450 4300 8000 4300
 Text Notes 2600 3400 0    50   ~ 0
 make sure compatable with sparkfin quik pinout
-$Comp
-L MoxiE_Control_board-rescue:Conn_01x06-Connector_Generic P105
-U 1 1 5DEF1F3C
-P 6800 6950
-AR Path="/5DEF1F3C" Ref="P105"  Part="1" 
-AR Path="/5B39743C/5DEF1F3C" Ref="P?"  Part="1" 
-F 0 "P105" H 6800 6600 60  0000 C CNN
-F 1 "HALL/Encoder" H 6800 7300 60  0000 C CNN
-F 2 "crf1:simple_jst-zh_1.5mm_unfinished" H 6800 6950 60  0001 C CNN
-F 3 "" H 6800 6950 60  0001 C CNN
-	1    6800 6950
-	1    0    0    -1  
-$EndComp
-$Sheet
-S 2600 6500 950  700 
-U 5E1930DF
-F0 "Aux output 12v" 50
-F1 "aux 12v.sch" 50
-$EndSheet
 $Sheet
 S 1700 950  800  450 
 U 5E25D612
@@ -830,4 +724,147 @@ Text Label 4250 5700 0    50   ~ 0
 DRV_CS
 Text Notes 9850 1600 0    50   ~ 0
 check that miso and mosi arent swapped
+$Comp
+L MoxiE_Control_board-rescue:R-Device R106
+U 1 1 5DEBD7B4
+P 3400 3900
+AR Path="/5DEBD7B4" Ref="R106"  Part="1" 
+AR Path="/5B39743C/5DEBD7B4" Ref="R?"  Part="1" 
+F 0 "R106" V 3300 3850 50  0000 C CNN
+F 1 "100Ω" V 3400 3900 43  0000 C CNN
+F 2 "pkl_dipol:R_0402" H 3400 3900 60  0001 C CNN
+F 3 "" H 3400 3900 60  0001 C CNN
+	1    3400 3900
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6450 4500 9450 4500
+Wire Wire Line
+	9450 4500 9450 3550
+Wire Wire Line
+	9450 3550 9300 3550
+$Comp
+L Connector_Generic:Conn_01x01 J101
+U 1 1 5DECC645
+P 4500 5900
+F 0 "J101" H 4418 5675 50  0000 C CNN
+F 1 "Conn_01x01" H 4418 5766 50  0000 C CNN
+F 2 "pkl_connectors:SMD_Pad_Array-1_Pitch1mm" H 4500 5900 50  0001 C CNN
+F 3 "~" H 4500 5900 50  0001 C CNN
+	1    4500 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J102
+U 1 1 5DECD6F7
+P 4500 6000
+F 0 "J102" H 4418 5775 50  0000 C CNN
+F 1 "Conn_01x01" H 4418 5866 50  0000 C CNN
+F 2 "pkl_connectors:SMD_Pad_Array-1_Pitch1mm" H 4500 6000 50  0001 C CNN
+F 3 "~" H 4500 6000 50  0001 C CNN
+	1    4500 6000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4200 4000 4200 3900
+Wire Wire Line
+	3850 4000 3850 3800
+$Comp
+L MoxiE_Control_board-rescue:GND-power #PWR0113
+U 1 1 5B397947
+P 4200 4300
+AR Path="/5B397947" Ref="#PWR0113"  Part="1" 
+AR Path="/5B39743C/5B397947" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0113" H 4200 4300 30  0001 C CNN
+F 1 "GND" H 4200 4230 30  0001 C CNN
+F 2 "" H 4200 4300 60  0001 C CNN
+F 3 "" H 4200 4300 60  0001 C CNN
+	1    4200 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MoxiE_Control_board-rescue:GND-power #PWR0108
+U 1 1 5B397941
+P 3850 4300
+AR Path="/5B397941" Ref="#PWR0108"  Part="1" 
+AR Path="/5B39743C/5B397941" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0108" H 3850 4300 30  0001 C CNN
+F 1 "GND" H 3850 4230 30  0001 C CNN
+F 2 "" H 3850 4300 60  0001 C CNN
+F 3 "" H 3850 4300 60  0001 C CNN
+	1    3850 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MoxiE_Control_board-rescue:R-Device R103
+U 1 1 5B39793A
+P 3850 4150
+AR Path="/5B39793A" Ref="R103"  Part="1" 
+AR Path="/5B39743C/5B39793A" Ref="R?"  Part="1" 
+F 0 "R103" H 3920 4196 50  0000 L CNN
+F 1 "100kΩ" H 3920 4105 50  0000 L CNN
+F 2 "pkl_dipol:R_0402" V 3780 4150 50  0001 C CNN
+F 3 "~" H 3850 4150 50  0001 C CNN
+	1    3850 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L MoxiE_Control_board-rescue:R-Device R104
+U 1 1 5B397933
+P 4200 4150
+AR Path="/5B397933" Ref="R104"  Part="1" 
+AR Path="/5B39743C/5B397933" Ref="R?"  Part="1" 
+F 0 "R104" H 4270 4196 50  0000 L CNN
+F 1 "100kΩ" H 4270 4105 50  0000 L CNN
+F 2 "pkl_dipol:R_0402" V 4130 4150 50  0001 C CNN
+F 3 "~" H 4200 4150 50  0001 C CNN
+	1    4200 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L MoxiE_Control_board-rescue:R-Device R105
+U 1 1 5DEBE1B0
+P 3000 3800
+AR Path="/5DEBE1B0" Ref="R105"  Part="1" 
+AR Path="/5B39743C/5DEBE1B0" Ref="R?"  Part="1" 
+F 0 "R105" V 2900 3750 50  0000 C CNN
+F 1 "100Ω" V 3000 3800 43  0000 C CNN
+F 2 "pkl_dipol:R_0402" H 3000 3800 60  0001 C CNN
+F 3 "" H 3000 3800 60  0001 C CNN
+	1    3000 3800
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2650 3800 2850 3800
+Wire Wire Line
+	2650 3900 3250 3900
+Wire Wire Line
+	4200 3900 4700 3900
+Wire Wire Line
+	3150 3800 3850 3800
+Connection ~ 3850 3800
+Wire Wire Line
+	3850 3800 4700 3800
+Wire Wire Line
+	3550 3900 4200 3900
+Connection ~ 4200 3900
+$Comp
+L MoxiE_Control_board-rescue:Conn_01x04-Connector_Generic P104
+U 1 1 5B39792A
+P 3550 3350
+AR Path="/5B39792A" Ref="P104"  Part="1" 
+AR Path="/5B39743C/5B39792A" Ref="P?"  Part="1" 
+F 0 "P104" H 3550 3100 50  0000 C CNN
+F 1 "I2C" H 3550 3600 40  0000 C CNN
+F 2 "Connectors_JST:JST_SH_BM04B-SRSS-TB_04x1.00mm_Straight" H 3550 3400 60  0001 C CNN
+F 3 "" H 3550 3400 60  0000 C CNN
+	1    3550 3350
+	-1   0    0    -1  
+$EndComp
+Text Label 2650 3800 0    0    ~ 0
+ADC_THROTTLE_R
+Text Label 2650 3900 0    14   ~ 0
+ADC_BRAKE_R
+Text Label 2650 3800 0    14   ~ 0
+ADC_THROTTLE_R
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 11
+Sheet 8 10
 Title "BLDC Driver 4.11"
 Date "21 aug 2015"
 Rev "4.12"
@@ -43,20 +43,6 @@ F 3 "" H 7750 6100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MoxiE_Control_board-rescue:+3.3V-power #PWR?
-U 1 1 53F757C2
-P 8050 4700
-AR Path="/53F7501A/53F757C2" Ref="#PWR?"  Part="1" 
-AR Path="/5B39743C/5B397924/53F757C2" Ref="#PWR?"  Part="1" 
-AR Path="/5B397924/53F757C2" Ref="#PWR0813"  Part="1" 
-F 0 "#PWR0813" H 8050 4800 30  0001 C CNN
-F 1 "+3.3V" H 8050 4800 30  0000 C CNN
-F 2 "" H 8050 4700 60  0001 C CNN
-F 3 "" H 8050 4700 60  0001 C CNN
-	1    8050 4700
-	1    0    0    -1  
-$EndComp
-$Comp
 L MoxiE_Control_board-rescue:GND-power #PWR?
 U 1 1 53F757C8
 P 7250 4650
@@ -68,20 +54,6 @@ F 1 "GND" H 7250 4580 30  0001 C CNN
 F 2 "" H 7250 4650 60  0001 C CNN
 F 3 "" H 7250 4650 60  0001 C CNN
 	1    7250 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L MoxiE_Control_board-rescue:+3.3V-power #PWR?
-U 1 1 53F757CE
-P 7250 3800
-AR Path="/53F7501A/53F757CE" Ref="#PWR?"  Part="1" 
-AR Path="/5B39743C/5B397924/53F757CE" Ref="#PWR?"  Part="1" 
-AR Path="/5B397924/53F757CE" Ref="#PWR0807"  Part="1" 
-F 0 "#PWR0807" H 7250 3900 30  0001 C CNN
-F 1 "+3.3V" H 7250 3900 30  0000 C CNN
-F 2 "" H 7250 3800 60  0001 C CNN
-F 3 "" H 7250 3800 60  0001 C CNN
-	1    7250 3800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -340,11 +312,11 @@ Text HLabel 4550 2250 0    60   Output ~ 0
 H2
 Text HLabel 4550 2150 0    60   Output ~ 0
 H1
-Text HLabel 4550 1350 0    60   Input ~ 0
+Text HLabel 4550 4150 0    60   Input ~ 0
 PHASE_V_1_ADC
-Text HLabel 4550 1450 0    60   Input ~ 0
+Text HLabel 4550 4250 0    60   Input ~ 0
 PHASE_V_2_ADC
-Text HLabel 4550 1550 0    60   Input ~ 0
+Text HLabel 4550 4350 0    60   Input ~ 0
 PHASE_V_3_ADC
 Text HLabel 4550 4450 0    60   Input ~ 0
 ADC_VBUS
@@ -2533,25 +2505,10 @@ Text HLabel 4550 3250 0    60   Input ~ 0
 CAN_RX
 Text HLabel 4550 3350 0    60   Output ~ 0
 CAN_TX
-Text HLabel 7050 1450 2    60   Output ~ 0
+Text HLabel 4550 5650 0    60   Output ~ 0
 LED_RED
-Text HLabel 7050 1350 2    60   Output ~ 0
+Text HLabel 4550 2950 0    60   Output ~ 0
 LED_GREEN
-$Comp
-L MoxiE_drive_symbol_lib:CRYSTAL_SMD X?
-U 1 1 540978A3
-P 8550 1650
-AR Path="/53F7501A/540978A3" Ref="X?"  Part="1" 
-AR Path="/5B39743C/5B397924/540978A3" Ref="X?"  Part="1" 
-AR Path="/5B397924/540978A3" Ref="X801"  Part="1" 
-F 0 "X801" H 8550 1740 30  0000 C CNN
-F 1 "8MHz 10ppm" H 8600 1550 30  0000 L CNN
-F 2 "Oscillators:Oscillator_SMD_EuroQuartz_XO53-4pin_5.0x3.2mm" H 8550 1650 60  0001 C CNN
-F 3 "" H 8550 1650 60  0000 C CNN
-F 4 "ABM3B-8.0-10-1UT" H 8550 1650 60  0001 C CNN "mfg#"
-	1    8550 1650
-	1    0    0    -1  
-$EndComp
 $Comp
 L MoxiE_Control_board-rescue:GND-power #PWR?
 U 1 1 54097D19
@@ -2602,11 +2559,11 @@ Wire Wire Line
 	9300 3850 9550 3850
 Wire Wire Line
 	9550 3850 9800 3850
-Text HLabel 4550 4150 0    50   Input ~ 0
+Text HLabel 4550 1350 0    50   Input ~ 0
 PHASE_CURRENT_1_ADC
-Text HLabel 4550 4250 0    50   Input ~ 0
+Text HLabel 4550 1450 0    50   Input ~ 0
 PHASE_CURRENT_2_ADC
-Text HLabel 4550 4350 0    50   Input ~ 0
+Text HLabel 4550 1550 0    50   Input ~ 0
 PHASE_CURRENT_3_ADC
 Connection ~ 7250 4650
 Wire Wire Line
@@ -2649,62 +2606,24 @@ Wire Wire Line
 	7050 5650 7450 5650
 Wire Wire Line
 	7050 5550 7750 5550
-Text Notes 9100 1600 0    50   ~ 0
+Text Notes 8100 2050 0    50   ~ 0
 oscillator wrong footprint
-Text Notes 8200 3450 0    50   ~ 0
-needs to source 15ma \nfor hall sensor power
-$Comp
-L MoxiE_Control_board-rescue:+3.3V-power #PWR?
-U 1 1 5B0473DE
-P 10250 5550
-AR Path="/53F7501A/5B0473DE" Ref="#PWR?"  Part="1" 
-AR Path="/5B39743C/5B397924/5B0473DE" Ref="#PWR?"  Part="1" 
-AR Path="/5B397924/5B0473DE" Ref="#PWR0820"  Part="1" 
-F 0 "#PWR0820" H 10250 5650 30  0001 C CNN
-F 1 "+3.3V" H 10250 5650 30  0000 C CNN
-F 2 "" H 10250 5550 60  0001 C CNN
-F 3 "" H 10250 5550 60  0001 C CNN
-	1    10250 5550
-	0    1    1    0   
-$EndComp
-$Comp
-L MoxiE_Control_board-rescue:GND-power #PWR?
-U 1 1 5B0473E4
-P 9950 5900
-AR Path="/53F7501A/5B0473E4" Ref="#PWR?"  Part="1" 
-AR Path="/5B39743C/5B397924/5B0473E4" Ref="#PWR?"  Part="1" 
-AR Path="/5B397924/5B0473E4" Ref="#PWR0819"  Part="1" 
-F 0 "#PWR0819" H 9950 5900 30  0001 C CNN
-F 1 "GND" H 9950 5830 30  0001 C CNN
-F 2 "" H 9950 5900 60  0001 C CNN
-F 3 "" H 9950 5900 60  0001 C CNN
-	1    9950 5900
-	0    1    1    0   
-$EndComp
-Text GLabel 10100 5800 0    60   Input ~ 0
+Text GLabel 10100 5650 0    60   Input ~ 0
 SWCLK
-Text GLabel 10100 6000 0    60   Input ~ 0
+Text GLabel 10100 5750 0    60   Input ~ 0
 SWDIO
-Text GLabel 10100 6100 0    60   Input ~ 0
+Text GLabel 10100 5850 0    60   Input ~ 0
 NRST
-Wire Wire Line
-	10000 5700 10100 5700
-Wire Wire Line
-	10000 5550 10000 5700
-Wire Wire Line
-	10250 5550 10000 5550
-Wire Wire Line
-	10100 5900 9950 5900
 Wire Notes Line
-	9600 5450 9600 6350
+	9600 5300 9600 6200
 Wire Notes Line
-	9600 6350 10700 6350
+	9600 6200 10700 6200
 Wire Notes Line
-	10700 6350 10700 5450
+	10700 6200 10700 5300
 Wire Notes Line
-	10700 5450 9600 5450
-Text Notes 9050 6500 0    60   ~ 0
-Programming / Debug\nconnector\nchange to 4 pin remove vcc? or add swo?\nconnector not populated by default, for sw debug
+	10700 5300 9600 5300
+Text Notes 9550 6450 0    60   ~ 0
+Programming / Debug\nnot populated by default
 $Comp
 L MoxiE_Control_board-rescue:LED_ALT-Device D?
 U 1 1 5B0EBA3B
@@ -2871,8 +2790,6 @@ Text HLabel 4600 7200 0    60   Output ~ 0
 LED_RED
 Text Notes 2700 1750 0    50   ~ 0
 servo sig should also go to adc\ncheck that 5v tolerant?
-Text Notes 9050 5300 0    50   ~ 0
-make bogopin freindly? \nonly need to program once.\nmaybe smd pads on underside\nexcept for debugging - need connector for that.\nmaybe 1.0mm pitch optionally placeable?
 Text HLabel 4550 3550 0    50   Output ~ 0
 SDA_2
 Text HLabel 4550 3450 0    50   Output ~ 0
@@ -2895,18 +2812,14 @@ Text HLabel 4550 1950 0    50   Input ~ 0
 AUX1_PWM
 Text HLabel 4550 2050 0    50   Input ~ 0
 AUX2_PWM
-Text HLabel 4550 2750 0    50   Output ~ 0
+Text HLabel 4550 1750 0    50   Output ~ 0
 ADC_THROTTLE
-Text HLabel 4550 2850 0    50   Output ~ 0
+Text HLabel 4550 1850 0    50   Output ~ 0
 ADC_BRAKE
 Text HLabel 4550 5450 0    50   Output ~ 0
 REVERSE_SW
-Text HLabel 4550 2950 0    50   Output ~ 0
+Text HLabel 4550 2850 0    50   Output ~ 0
 BRAKE_SW
-Text HLabel 4550 1750 0    50   Input ~ 0
-DAC1_ADC
-Text HLabel 4550 1850 0    50   Input ~ 0
-DAC2_ADC
 Wire Wire Line
 	7050 1650 8150 1650
 Wire Wire Line
@@ -2919,21 +2832,6 @@ Text Label 7100 5550 0    24   ~ 0
 VCAP1
 Text Label 7100 5650 0    24   ~ 0
 VCAP2
-$Comp
-L MoxiE_Control_board-rescue:Conn_01x05-Connector_Generic J?
-U 1 1 5AF83BF6
-P 10300 5900
-AR Path="/53F7501A/5AF83BF6" Ref="J?"  Part="1" 
-AR Path="/5B39743C/5B397924/5AF83BF6" Ref="J?"  Part="1" 
-AR Path="/5B397924/5AF83BF6" Ref="J801"  Part="1" 
-F 0 "J801" H 10380 5942 50  0000 L CNN
-F 1 "SWD" H 10380 5851 50  0000 L CNN
-F 2 "Connectors_JST:JST_SH_BM06B-SRSS-TB_06x1.00mm_Straight" H 10300 5900 50  0001 C CNN
-F 3 "~" H 10300 5900 50  0001 C CNN
-F 4 "SM05B-GHS-TB(LF)(SN) " H 10300 5900 50  0001 C CNN "pn"
-	1    10300 5900
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GNDA #PWR?
 U 1 1 5D557287
@@ -3060,8 +2958,8 @@ F 3 "" H 7450 5900 60  0001 C CNN
 	1    7450 5900
 	-1   0    0    1   
 $EndComp
-Text Notes 8800 2750 0    50   ~ 0
-add switch/ through hole jumper to enter dfu usb fw mode
+Text Notes 9150 3000 0    50   ~ 0
+dfu mode switch,\ncan use once booted too?\n\ncheck that all dfu pin strapping is met
 Text Notes 9750 1850 0    50   ~ 0
 boot0 high for dfu mode
 $Comp
@@ -3154,4 +3052,107 @@ Wire Wire Line
 Connection ~ 10100 2500
 Wire Wire Line
 	10100 2550 10100 2500
+Text HLabel 4550 2750 0    50   Input ~ 0
+gdrv_vsense
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5DF8CE8E
+P 8050 4700
+AR Path="/5D44BA97/5DF8CE8E" Ref="#PWR?"  Part="1" 
+AR Path="/5B397924/5DF8CE8E" Ref="#PWR0136"  Part="1" 
+F 0 "#PWR0136" H 8050 4550 50  0001 C CNN
+F 1 "+3.3VA" H 8065 4873 50  0000 C CNN
+F 2 "" H 8050 4700 50  0001 C CNN
+F 3 "" H 8050 4700 50  0001 C CNN
+	1    8050 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MoxiE_Control_board-rescue:+3.3V-power #PWR?
+U 1 1 53F757CE
+P 7250 3800
+AR Path="/53F7501A/53F757CE" Ref="#PWR?"  Part="1" 
+AR Path="/5B39743C/5B397924/53F757CE" Ref="#PWR?"  Part="1" 
+AR Path="/5B397924/53F757CE" Ref="#PWR0807"  Part="1" 
+F 0 "#PWR0807" H 7250 3900 30  0001 C CNN
+F 1 "+3.3V" H 7250 3900 30  0000 C CNN
+F 2 "" H 7250 3800 60  0001 C CNN
+F 3 "" H 7250 3800 60  0001 C CNN
+	1    7250 3800
+	1    0    0    -1  
+$EndComp
+Text Notes 2400 2900 0    50   ~ 0
+fw note:  phase isense and vsense swapped
+Text Label 5500 6500 1    20   ~ 0
+LED_BL_R
+Text Label 5500 6850 1    20   ~ 0
+LED_GN_R
+Text Label 5500 7200 1    20   ~ 0
+LED_RD_R
+Text Label 7100 1650 0    50   ~ 0
+XOSC_0
+Text Label 7100 1750 0    50   ~ 0
+XOSC_1
+$Comp
+L MoxiE_drive_symbol_lib:CRYSTAL_SMD X?
+U 1 1 540978A3
+P 8550 1650
+AR Path="/53F7501A/540978A3" Ref="X?"  Part="1" 
+AR Path="/5B39743C/5B397924/540978A3" Ref="X?"  Part="1" 
+AR Path="/5B397924/540978A3" Ref="X801"  Part="1" 
+F 0 "X801" H 8550 1740 30  0000 C CNN
+F 1 "8MHz 10ppm" H 8600 1550 30  0000 L CNN
+F 2 "Oscillators:Oscillator_SMD_EuroQuartz_XO53-4pin_5.0x3.2mm" H 8550 1650 60  0001 C CNN
+F 3 "" H 8550 1650 60  0000 C CNN
+F 4 "ABM3B-8.0-10-1UT" H 8550 1650 60  0001 C CNN "mfg#"
+	1    8550 1650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MoxiE_Control_board-rescue:GND-power #PWR?
+U 1 1 5DEB2C34
+P 10100 5950
+AR Path="/5DEB2C34" Ref="#PWR?"  Part="1" 
+AR Path="/5B39743C/5DEB2C34" Ref="#PWR?"  Part="1" 
+AR Path="/5B397924/5DEB2C34" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 10100 5950 30  0001 C CNN
+F 1 "GND" H 10100 5880 30  0001 C CNN
+F 2 "" H 10100 5950 60  0001 C CNN
+F 3 "" H 10100 5950 60  0001 C CNN
+	1    10100 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L MoxiE_Control_board-rescue:Conn_01x04-Connector_Generic P?
+U 1 1 5DEB2C3C
+P 10300 5850
+AR Path="/5DEB2C3C" Ref="P?"  Part="1" 
+AR Path="/5B39743C/5DEB2C3C" Ref="P?"  Part="1" 
+AR Path="/5B397924/5DEB2C3C" Ref="P801"  Part="1" 
+F 0 "P801" H 10300 5600 50  0000 C CNN
+F 1 "SWD_DEBUG" H 10300 6100 40  0000 C CNN
+F 2 "Connectors_JST:JST_SH_BM04B-SRSS-TB_04x1.00mm_Straight" H 10300 5900 60  0001 C CNN
+F 3 "" H 10300 5900 60  0000 C CNN
+	1    10300 5850
+	1    0    0    1   
+$EndComp
+Text Notes 10600 5950 2    50   ~ 0
+1mm
+$Comp
+L MoxiE_drive_symbol_lib:CRYSTAL_SMD X?
+U 1 1 5DFE01DA
+P 9600 1200
+AR Path="/53F7501A/5DFE01DA" Ref="X?"  Part="1" 
+AR Path="/5B39743C/5B397924/5DFE01DA" Ref="X?"  Part="1" 
+AR Path="/5B397924/5DFE01DA" Ref="X802"  Part="1" 
+F 0 "X802" H 9600 1290 30  0000 C CNN
+F 1 "8MHz 10ppm" H 9650 1100 30  0000 L CNN
+F 2 "pkl_misc:PRQC" H 9600 1200 60  0001 C CNN
+F 3 "" H 9600 1200 60  0000 C CNN
+F 4 "ABM3B-8.0-10-1UT" H 9600 1200 60  0001 C CNN "mfg#"
+	1    9600 1200
+	-1   0    0    -1  
+$EndComp
+Text Notes 9000 5250 0    50   ~ 0
+swap to 5-6 pin connector? can i include swo at all?
 $EndSCHEMATC

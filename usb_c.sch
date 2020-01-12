@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 11
+Sheet 10 10
 Title ""
 Date ""
 Rev ""
@@ -254,4 +254,14 @@ Wire Wire Line
 	6100 4050 6050 4050
 Wire Wire Line
 	7150 4050 7100 4050
+Text Notes 5200 3200 0    14   ~ 0
+D-_R
+Text Notes 5200 3300 0    14   ~ 0
+D+_R
+Text Notes 5150 2900 0    14   ~ 0
+USB_CC2
+Text Notes 5150 2800 0    14   ~ 0
+USB_CC1
+Text Notes 5150 2300 0    14   ~ 0
+USB_VBUS
 $EndSCHEMATC

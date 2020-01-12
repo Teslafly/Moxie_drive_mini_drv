@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 11
+Sheet 2 10
 Title "BLDC Driver 4.11"
 Date "21 aug 2015"
 Rev "4.12"
@@ -240,4 +240,6 @@ Wire Wire Line
 	6900 4100 6900 4050
 Wire Wire Line
 	6900 4050 6750 4050
+Text Notes 5050 2350 0    50   ~ 0
+5v supply can trancievers are much more robust and cheaper\n(have higher transient tolerance on can lines)\n\nbut really want to avoid extra 5v rail.\n\nfootprint also compatable with TI tcan332
 $EndSCHEMATC
