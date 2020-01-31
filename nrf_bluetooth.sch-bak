@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:MoxiE_Control_board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 10
+Sheet 9 13
 Title ""
 Date ""
 Rev ""

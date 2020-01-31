@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:MoxiE_Control_board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 10
+Sheet 4 13
 Title ""
 Date ""
 Rev ""
@@ -292,17 +291,6 @@ F 3 "" H 8750 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+BATT #PWR0406
-U 1 1 5D565ECF
-P 2550 8900
-F 0 "#PWR0406" H 2550 8750 50  0001 C CNN
-F 1 "+BATT" H 2565 9073 50  0000 C CNN
-F 2 "" H 2550 8900 50  0001 C CNN
-F 3 "" H 2550 8900 50  0001 C CNN
-	1    2550 8900
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+15V #PWR0405
 U 1 1 5D565EC2
 P 4700 6600
@@ -452,12 +440,12 @@ Text Label 8350 8150 0    39   ~ 0
 $Comp
 L power:+3.3V #PWR0407
 U 1 1 5D565EFE
-P 2900 5050
-F 0 "#PWR0407" H 2900 4900 50  0001 C CNN
-F 1 "+3.3V" H 2915 5223 50  0000 C CNN
-F 2 "" H 2900 5050 50  0001 C CNN
-F 3 "" H 2900 5050 50  0001 C CNN
-	1    2900 5050
+P 2650 5050
+F 0 "#PWR0407" H 2650 4900 50  0001 C CNN
+F 1 "+3.3V" H 2665 5223 50  0000 C CNN
+F 2 "" H 2650 5050 50  0001 C CNN
+F 3 "" H 2650 5050 50  0001 C CNN
+	1    2650 5050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2119,8 +2107,6 @@ F 3 "" H 15200 8700 50  0001 C CNN
 	1    15200 8700
 	1    0    0    -1  
 $EndComp
-Text Notes 2050 10200 0    50   ~ 0
-possibly change c502 to 2x 0603 \nor same as hv filter cap (1.0-2.2uf) 1206 package\nand place on top if 1206\n
 $Comp
 L power:GNDPWR #PWR?
 U 1 1 5DEDA3CD
@@ -2163,75 +2149,6 @@ F 3 "" H 13250 1450 50  0001 C CNN
 	1    13250 1450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2550 9450 2550 9400
-Wire Wire Line
-	2550 9000 2550 8950
-$Comp
-L Device:R_Small R419
-U 1 1 5DF88FFA
-P 2000 9350
-F 0 "R419" H 2059 9396 50  0000 L CNN
-F 1 "500k" H 2059 9305 50  0000 L CNN
-F 2 "pkl_dipol:R_0603" H 2000 9350 50  0001 C CNN
-F 3 "~" H 2000 9350 50  0001 C CNN
-	1    2000 9350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDD #PWR0441
-U 1 1 5DF892AE
-P 2000 9650
-F 0 "#PWR0441" H 2000 9400 50  0001 C CNN
-F 1 "GNDD" H 2004 9495 50  0000 C CNN
-F 2 "" H 2000 9650 50  0001 C CNN
-F 3 "" H 2000 9650 50  0001 C CNN
-	1    2000 9650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 8950 2000 8950
-Connection ~ 2550 8950
-Wire Wire Line
-	2550 8950 2550 8900
-Wire Wire Line
-	2000 9150 2000 9200
-Wire Wire Line
-	2000 9200 2250 9200
-Connection ~ 2000 9200
-Wire Wire Line
-	2000 9200 2000 9250
-Wire Wire Line
-	2000 9650 2000 9600
-Wire Wire Line
-	2000 9500 2000 9450
-Text Notes 1000 9600 0    50   ~ 0
-switch
-Wire Wire Line
-	1500 9600 2000 9600
-$Comp
-L Device:Jumper JP401
-U 1 1 5DFC2FAF
-P 2950 8950
-F 0 "JP401" H 2950 9214 50  0000 C CNN
-F 1 "pwr_ctl_byp" H 2950 9123 50  0000 C CNN
-F 2 "pkl_jumpers:J_0603" H 2950 8950 50  0001 C CNN
-F 3 "~" H 2950 8950 50  0001 C CNN
-	1    2950 8950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 8950 2650 8950
-Wire Wire Line
-	3250 8950 3350 8950
-Wire Wire Line
-	3350 8950 3350 9450
-Wire Wire Line
-	2550 9450 3350 9450
-Wire Wire Line
-	1500 9500 2000 9500
-Text Notes 2350 8600 0    50   ~ 0
-jp perminantly enables power. \npower switch will not work
 $Comp
 L power:GNDD #PWR0444
 U 1 1 5E0A437D
@@ -2294,45 +2211,6 @@ Wire Wire Line
 	11850 1800 12600 1800
 Wire Wire Line
 	11850 2200 12600 2200
-$Comp
-L Connector_Generic:Conn_01x03 J406
-U 1 1 5E1ACAC9
-P 1300 9600
-F 0 "J406" H 1218 9275 50  0000 C CNN
-F 1 "Conn_01x03" H 1218 9366 50  0000 C CNN
-F 2 "Connectors_JST:JST_PH_B3B-PH-K_03x2.00mm_Straight" H 1300 9600 50  0001 C CNN
-F 3 "~" H 1300 9600 50  0001 C CNN
-	1    1300 9600
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+15V #PWR0120
-U 1 1 5E1ADFB1
-P 1300 10000
-F 0 "#PWR0120" H 1300 9850 50  0001 C CNN
-F 1 "+15V" H 1315 10173 50  0000 C CNN
-F 2 "" H 1300 10000 50  0001 C CNN
-F 3 "" H 1300 10000 50  0001 C CNN
-	1    1300 10000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R420
-U 1 1 5E1AF284
-P 1600 9850
-F 0 "R420" H 1659 9896 50  0000 L CNN
-F 1 "100" H 1659 9805 50  0000 L CNN
-F 2 "pkl_dipol:R_0402" H 1600 9850 50  0001 C CNN
-F 3 "~" H 1600 9850 50  0001 C CNN
-	1    1600 9850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1600 9750 1600 9700
-Wire Wire Line
-	1600 9950 1600 10000
-Wire Wire Line
-	1600 10000 1300 10000
 Text Label 6200 7750 0    16   ~ 0
 BK_RT_SD
 Text Label 5900 7950 0    50   ~ 0
@@ -2345,16 +2223,10 @@ Text Label 9400 7750 0    50   ~ 0
 BK_VOUT_RIPP
 Text Label 5800 7550 0    50   ~ 0
 BK_VIN
-Text Label 1600 9500 0    14   ~ 0
-pwr_ctl
-Text Label 2050 9200 0    14   ~ 0
-pwr_ctl_g
 Text Notes 8800 2500 0    50   ~ 0
 vdrain stby ic < 40ua
 Text Notes 6700 7600 0    50   ~ 0
 buck vin stby ic =120ua
-Text Label 1600 9700 2    14   ~ 0
-sw_led
 $Comp
 L power:+BATT #PWR0102
 U 1 1 5DE2FD1F
@@ -2366,15 +2238,8 @@ F 3 "" H 3500 7400 50  0001 C CNN
 	1    3500 7400
 	1    0    0    -1  
 $EndComp
-Text Label 3500 9650 0    50   ~ 0
-batt_pwr_ctl
 Wire Wire Line
 	4950 7550 5350 7550
-Text Label 3450 9450 0    50   ~ 0
-batt_pwr_ctl
-Wire Wire Line
-	3350 9450 3950 9450
-Connection ~ 3350 9450
 $Comp
 L power:GND #PWR0132
 U 1 1 5DE4FBC3
@@ -2386,30 +2251,6 @@ F 3 "" H 5800 7050 50  0001 C CNN
 	1    5800 7050
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R418
-U 1 1 5DF8806B
-P 2000 9050
-F 0 "R418" H 2059 9096 50  0000 L CNN
-F 1 "1M" H 2059 9005 50  0000 L CNN
-F 2 "pkl_dipol:R_0402" H 2000 9050 50  0001 C CNN
-F 3 "~" H 2000 9050 50  0001 C CNN
-	1    2000 9050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_PNP_BEC Q401
-U 1 1 5DFFB82F
-P 2450 9200
-F 0 "Q401" H 2640 9246 50  0000 L CNN
-F 1 "Q_PNP_BCE" H 2640 9155 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 2650 9300 50  0001 C CNN
-F 3 "~" H 2450 9200 50  0001 C CNN
-	1    2450 9200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1600 9700 1500 9700
 Text Notes 8750 7500 0    50   ~ 0
 diode footprint needs to be updated. can likely be put on bottonm of pcb
 Wire Wire Line
@@ -2534,35 +2375,20 @@ F 3 "" H 5150 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Net-Tie_2 NT403
-U 1 1 5D723FF1
-P 3100 5100
-F 0 "NT403" V 3054 5141 50  0000 L CNN
-F 1 "Net-Tie_2" V 3145 5141 50  0000 L CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 3100 5100 50  0001 C CNN
-F 3 "~" H 3100 5100 50  0001 C CNN
-	1    3100 5100
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+3.3VA #PWR0135
 U 1 1 5DF924EC
-P 3300 5050
-F 0 "#PWR0135" H 3300 4900 50  0001 C CNN
-F 1 "+3.3VA" H 3315 5223 50  0000 C CNN
-F 2 "" H 3300 5050 50  0001 C CNN
-F 3 "" H 3300 5050 50  0001 C CNN
-	1    3300 5050
+P 3450 5050
+F 0 "#PWR0135" H 3450 4900 50  0001 C CNN
+F 1 "+3.3VA" H 3465 5223 50  0000 C CNN
+F 2 "" H 3450 5050 50  0001 C CNN
+F 3 "" H 3450 5050 50  0001 C CNN
+	1    3450 5050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2900 5050 2900 5100
+	2650 5050 2650 5100
 Wire Wire Line
-	2900 5100 3000 5100
-Wire Wire Line
-	3200 5100 3300 5100
-Wire Wire Line
-	3300 5100 3300 5050
+	3450 5100 3450 5050
 Wire Wire Line
 	5150 5400 5950 5400
 $Comp
@@ -2678,4 +2504,38 @@ Wire Wire Line
 Connection ~ 5350 7550
 Wire Wire Line
 	5350 7550 6300 7550
+$Sheet
+S 1700 9350 1450 900 
+U 5E321495
+F0 "Power Switch" 50
+F1 "powerswitch.sch" 50
+$EndSheet
+$Comp
+L Device:Jumper JP?
+U 1 1 5E340F5F
+P 3600 8350
+AR Path="/5D44BA97/5E340F5F" Ref="JP?"  Part="1" 
+AR Path="/5D44BA97/5E321495/5E340F5F" Ref="JP?"  Part="1" 
+F 0 "JP?" H 3600 8614 50  0000 C CNN
+F 1 "pwr_ctl_byp" H 3600 8523 50  0000 C CNN
+F 2 "pkl_jumpers:J_0603" H 3600 8350 50  0001 C CNN
+F 3 "~" H 3600 8350 50  0001 C CNN
+	1    3600 8350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 5E34E2C6
+P 3050 5100
+F 0 "FB?" V 2776 5100 50  0000 C CNN
+F 1 "Ferrite_Bead" V 2867 5100 50  0000 C CNN
+F 2 "" V 2980 5100 50  0001 C CNN
+F 3 "~" H 3050 5100 50  0001 C CNN
+	1    3050 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 5100 3450 5100
+Wire Wire Line
+	2650 5100 2900 5100
 $EndSCHEMATC

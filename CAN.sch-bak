@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:MoxiE_Control_board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 10
+Sheet 2 13
 Title "BLDC Driver 4.11"
 Date "21 aug 2015"
 Rev "4.12"
@@ -49,15 +48,15 @@ CAN_TX
 $Comp
 L MoxiE_Control_board-rescue:R-Device R?
 U 1 1 540030A8
-P 5250 4350
+P 5250 4950
 AR Path="/53FFB6E1/540030A8" Ref="R?"  Part="1" 
 AR Path="/5B39743C/5B39780A/540030A8" Ref="R?"  Part="1" 
 AR Path="/5B39780A/540030A8" Ref="R202"  Part="1" 
-F 0 "R202" V 5330 4350 40  0000 C CNN
-F 1 "120R" V 5257 4351 40  0000 C CNN
-F 2 "pkl_dipol:R_0402" V 5180 4350 30  0001 C CNN
-F 3 "" H 5250 4350 30  0000 C CNN
-	1    5250 4350
+F 0 "R202" V 5330 4950 40  0000 C CNN
+F 1 "120R" V 5257 4951 40  0000 C CNN
+F 2 "pkl_dipol:R_0402" V 5180 4950 30  0001 C CNN
+F 3 "" H 5250 4950 30  0000 C CNN
+	1    5250 4950
 	1    0    0    -1  
 $EndComp
 Text HLabel 4550 3600 0    60   Input ~ 0
@@ -100,63 +99,59 @@ Wire Wire Line
 $Comp
 L MoxiE_Control_board-rescue:C-Device C?
 U 1 1 5D1E93C4
-P 5100 4750
+P 5100 5350
 AR Path="/53FFB6E1/5D1E93C4" Ref="C?"  Part="1" 
 AR Path="/5B39743C/5B39780A/5D1E93C4" Ref="C?"  Part="1" 
 AR Path="/5B39780A/5D1E93C4" Ref="C201"  Part="1" 
-F 0 "C201" H 5100 4850 40  0000 L CNN
-F 1 "4.7nf" H 5106 4665 40  0000 L CNN
-F 2 "pkl_dipol:C_0402" H 5138 4600 30  0001 C CNN
-F 3 "" H 5100 4750 60  0000 C CNN
-	1    5100 4750
+F 0 "C201" H 5100 5450 40  0000 L CNN
+F 1 "4.7nf" H 5106 5265 40  0000 L CNN
+F 2 "pkl_dipol:C_0402" H 5138 5200 30  0001 C CNN
+F 3 "" H 5100 5350 60  0000 C CNN
+	1    5100 5350
 	1    0    0    -1  
 $EndComp
 $Comp
 L MoxiE_Control_board-rescue:R-Device R?
 U 1 1 5D1E976C
-P 4950 4350
+P 4950 4950
 AR Path="/53FFB6E1/5D1E976C" Ref="R?"  Part="1" 
 AR Path="/5B39743C/5B39780A/5D1E976C" Ref="R?"  Part="1" 
 AR Path="/5B39780A/5D1E976C" Ref="R201"  Part="1" 
-F 0 "R201" V 5030 4350 40  0000 C CNN
-F 1 "120R" V 4957 4351 40  0000 C CNN
-F 2 "pkl_dipol:R_0402" V 4880 4350 30  0001 C CNN
-F 3 "" H 4950 4350 30  0000 C CNN
-	1    4950 4350
+F 0 "R201" V 5030 4950 40  0000 C CNN
+F 1 "120R" V 4957 4951 40  0000 C CNN
+F 2 "pkl_dipol:R_0402" V 4880 4950 30  0001 C CNN
+F 3 "" H 4950 4950 30  0000 C CNN
+	1    4950 4950
 	1    0    0    -1  
 $EndComp
 $Comp
 L MoxiE_Control_board-rescue:GND-power #PWR?
 U 1 1 5D1E9D99
-P 5100 4950
+P 5100 5550
 AR Path="/53FFB6E1/5D1E9D99" Ref="#PWR?"  Part="1" 
 AR Path="/5B39743C/5B39780A/5D1E9D99" Ref="#PWR?"  Part="1" 
 AR Path="/5B39780A/5D1E9D99" Ref="#PWR0201"  Part="1" 
-F 0 "#PWR0201" H 5100 4950 30  0001 C CNN
-F 1 "GND" H 5100 4880 30  0001 C CNN
-F 2 "" H 5100 4950 60  0000 C CNN
-F 3 "" H 5100 4950 60  0000 C CNN
-	1    5100 4950
+F 0 "#PWR0201" H 5100 5550 30  0001 C CNN
+F 1 "GND" H 5100 5480 30  0001 C CNN
+F 2 "" H 5100 5550 60  0000 C CNN
+F 3 "" H 5100 5550 60  0000 C CNN
+	1    5100 5550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4950 4500 4950 4550
+	4950 5100 4950 5150
 Wire Wire Line
-	4950 4550 5100 4550
+	4950 5150 5100 5150
 Wire Wire Line
-	5250 4550 5250 4500
+	5250 5150 5250 5100
 Wire Wire Line
-	5100 4600 5100 4550
-Connection ~ 5100 4550
+	5100 5200 5100 5150
+Connection ~ 5100 5150
 Wire Wire Line
-	5100 4550 5250 4550
+	5100 5150 5250 5150
 Wire Wire Line
-	5100 4950 5100 4900
-Wire Wire Line
-	4950 4200 4950 3600
+	5100 5550 5100 5500
 Connection ~ 4950 3600
-Wire Wire Line
-	5250 4200 5250 4100
 Wire Wire Line
 	4950 3600 5500 3600
 Wire Wire Line
@@ -242,4 +237,36 @@ Wire Wire Line
 	6900 4050 6750 4050
 Text Notes 5050 2350 0    50   ~ 0
 5v supply can trancievers are much more robust and cheaper\n(have higher transient tolerance on can lines)\n\nbut really want to avoid extra 5v rail.\n\nfootprint also compatable with TI tcan332
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 5E3A7D7E
+P 4950 4500
+F 0 "JP?" V 4904 4575 50  0000 L CNN
+F 1 "J_CTRM1" V 5050 4150 50  0000 L CNN
+F 2 "" H 4950 4500 50  0001 C CNN
+F 3 "~" H 4950 4500 50  0001 C CNN
+	1    4950 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 5E3A839E
+P 5250 4500
+F 0 "JP?" V 5204 4575 50  0000 L CNN
+F 1 "J_CTRM2" V 5350 4550 50  0000 L CNN
+F 2 "" H 5250 4500 50  0001 C CNN
+F 3 "~" H 5250 4500 50  0001 C CNN
+	1    5250 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 4100 5250 4400
+Wire Wire Line
+	4950 3600 4950 4400
+Wire Wire Line
+	4950 4600 4950 4800
+Wire Wire Line
+	5250 4600 5250 4800
+Text Notes 5450 5200 0    50   ~ 0
+can uses split termination\nhelps supress noise/spikes on can bus
 $EndSCHEMATC

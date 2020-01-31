@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:MoxiE_Control_board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 10
+Sheet 11 13
 Title "BLDC Driver 4.11"
 Date "21 aug 2015"
 Rev "4.12"
@@ -64,7 +63,7 @@ AR Path="/53F7501A/53F757DB" Ref="C?"  Part="1"
 AR Path="/5B39743C/5B397924/53F757DB" Ref="C?"  Part="1" 
 AR Path="/5B397924/53F757DB" Ref="C806"  Part="1" 
 F 0 "C806" H 8200 1550 50  0000 L CNN
-F 1 "15p" H 8200 1350 50  0000 L CNN
+F 1 "20p" H 8200 1350 50  0000 L CNN
 F 2 "pkl_dipol:C_0402" H 8150 1450 60  0001 C CNN
 F 3 "" H 8150 1450 60  0001 C CNN
 	1    8150 1450
@@ -78,7 +77,7 @@ AR Path="/53F7501A/53F757E2" Ref="C?"  Part="1"
 AR Path="/5B39743C/5B397924/53F757E2" Ref="C?"  Part="1" 
 AR Path="/5B397924/53F757E2" Ref="C808"  Part="1" 
 F 0 "C808" H 8950 1550 50  0000 L CNN
-F 1 "15p" H 8950 1350 50  0000 L CNN
+F 1 "20p" H 8950 1350 50  0000 L CNN
 F 2 "pkl_dipol:C_0402" H 8900 1450 60  0001 C CNN
 F 3 "" H 8900 1450 60  0001 C CNN
 	1    8900 1450
@@ -2810,7 +2809,7 @@ Text HLabel 7050 3000 2    50   Input ~ 0
 SPI3_MISO
 Text HLabel 4550 1950 0    50   Input ~ 0
 AUX1_PWM
-Text HLabel 4550 2050 0    50   Input ~ 0
+Text HLabel 4050 2050 0    50   Input ~ 0
 AUX2_PWM
 Text HLabel 4550 1750 0    50   Output ~ 0
 ADC_THROTTLE
@@ -2959,7 +2958,7 @@ F 3 "" H 7450 5900 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Notes 9150 3000 0    50   ~ 0
-dfu mode switch,\ncan use once booted too?\n\ncheck that all dfu pin strapping is met
+dfu mode switch for bootloader programming\ncan this pin be read once booted by firmware?\nif no, also attach to different gpio pin.\n
 Text Notes 9750 1850 0    50   ~ 0
 boot0 high for dfu mode
 $Comp
@@ -2978,7 +2977,7 @@ L Device:R_Small R804
 U 1 1 5E20E660
 P 10100 2350
 F 0 "R804" H 10159 2396 50  0000 L CNN
-F 1 "10k" H 10159 2305 50  0000 L CNN
+F 1 "1k" H 10159 2305 50  0000 L CNN
 F 2 "pkl_dipol:R_0402" H 10100 2350 50  0001 C CNN
 F 3 "~" H 10100 2350 50  0001 C CNN
 	1    10100 2350
@@ -3013,45 +3012,18 @@ F 3 "" H 10100 2550 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 9700 2200 0    50   Input ~ 0
-BOOT_0
+USR_BTN-DFU_BOOT
 Text HLabel 7200 1950 2    50   Input ~ 0
-BOOT_0
-$Comp
-L Device:C_Small C813
-U 1 1 5E2118B1
-P 9750 2350
-F 0 "C813" H 9658 2304 50  0000 R CNN
-F 1 "100n" H 9658 2395 50  0000 R CNN
-F 2 "pkl_dipol:C_0402" H 9750 2350 50  0001 C CNN
-F 3 "~" H 9750 2350 50  0001 C CNN
-	1    9750 2350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9750 2250 9750 2200
+USR_BTN-DFU_BOOT
 Wire Wire Line
 	10100 2200 10100 2250
 Wire Wire Line
 	10150 2200 10100 2200
 Wire Wire Line
-	9700 2200 9750 2200
-Connection ~ 9750 2200
-Wire Wire Line
 	10550 2200 10600 2200
 Wire Wire Line
 	10600 2200 10600 2150
-Wire Wire Line
-	9750 2450 9750 2500
-Wire Wire Line
-	10100 2450 10100 2500
-Wire Wire Line
-	9750 2200 10100 2200
 Connection ~ 10100 2200
-Wire Wire Line
-	9750 2500 10100 2500
-Connection ~ 10100 2500
-Wire Wire Line
-	10100 2550 10100 2500
 Text HLabel 4550 2750 0    50   Input ~ 0
 gdrv_vsense
 $Comp
@@ -3094,21 +3066,6 @@ XOSC_0
 Text Label 7100 1750 0    50   ~ 0
 XOSC_1
 $Comp
-L MoxiE_drive_symbol_lib:CRYSTAL_SMD X?
-U 1 1 540978A3
-P 8550 1650
-AR Path="/53F7501A/540978A3" Ref="X?"  Part="1" 
-AR Path="/5B39743C/5B397924/540978A3" Ref="X?"  Part="1" 
-AR Path="/5B397924/540978A3" Ref="X801"  Part="1" 
-F 0 "X801" H 8550 1740 30  0000 C CNN
-F 1 "8MHz 10ppm" H 8600 1550 30  0000 L CNN
-F 2 "Oscillators:Oscillator_SMD_EuroQuartz_XO53-4pin_5.0x3.2mm" H 8550 1650 60  0001 C CNN
-F 3 "" H 8550 1650 60  0000 C CNN
-F 4 "ABM3B-8.0-10-1UT" H 8550 1650 60  0001 C CNN "mfg#"
-	1    8550 1650
-	-1   0    0    -1  
-$EndComp
-$Comp
 L MoxiE_Control_board-rescue:GND-power #PWR?
 U 1 1 5DEB2C34
 P 10100 5950
@@ -3138,21 +3095,29 @@ F 3 "" H 10300 5900 60  0000 C CNN
 $EndComp
 Text Notes 10600 5950 2    50   ~ 0
 1mm
-$Comp
-L MoxiE_drive_symbol_lib:CRYSTAL_SMD X?
-U 1 1 5DFE01DA
-P 9600 1200
-AR Path="/53F7501A/5DFE01DA" Ref="X?"  Part="1" 
-AR Path="/5B39743C/5B397924/5DFE01DA" Ref="X?"  Part="1" 
-AR Path="/5B397924/5DFE01DA" Ref="X802"  Part="1" 
-F 0 "X802" H 9600 1290 30  0000 C CNN
-F 1 "8MHz 10ppm" H 9650 1100 30  0000 L CNN
-F 2 "pkl_misc:PRQC" H 9600 1200 60  0001 C CNN
-F 3 "" H 9600 1200 60  0000 C CNN
-F 4 "ABM3B-8.0-10-1UT" H 9600 1200 60  0001 C CNN "mfg#"
-	1    9600 1200
-	-1   0    0    -1  
-$EndComp
 Text Notes 9000 5250 0    50   ~ 0
 swap to 5-6 pin connector? can i include swo at all?
+Wire Wire Line
+	10100 2450 10100 2550
+Wire Wire Line
+	9700 2200 10100 2200
+Text Notes 7200 1150 0    50   ~ 0
+may be able to replace with 16mhz crystal (much more common than 8mhz, and smaller)\ndfu mode crystal:\nThe HSE clock source is used only when the CAN or the DFU (USB FS Device) \ninterfaces are selected.\nThe external clock must provide a frequency multiple \nof 1MHz and ranging from 4MHz to 26MHz. (so 16mhz is fine for dfu!)
+$Comp
+L MoxiE_drive_symbol_lib:CRYSTAL_SMD X?
+U 1 1 540978A3
+P 8550 1650
+AR Path="/53F7501A/540978A3" Ref="X?"  Part="1" 
+AR Path="/5B39743C/5B397924/540978A3" Ref="X?"  Part="1" 
+AR Path="/5B397924/540978A3" Ref="X801"  Part="1" 
+F 0 "X801" H 8550 1740 30  0000 C CNN
+F 1 "16MHz 10ppm" H 8400 1850 30  0000 L CNN
+F 2 "Oscillators:Oscillator_SMD_EuroQuartz_XO32-4pin_3.2x2.5mm" H 8550 1650 60  0001 C CNN
+F 3 "" H 8550 1650 60  0000 C CNN
+F 4 "S3216000201060" H 8550 1650 60  0001 C CNN "mfg#"
+	1    8550 1650
+	-1   0    0    -1  
+$EndComp
+Text HLabel 7050 1350 2    50   Input ~ 0
+USR_BTN-DFU_BOOT
 $EndSCHEMATC

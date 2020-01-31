@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:MoxiE_Control_board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 10
+Sheet 10 13
 Title ""
 Date ""
 Rev ""
@@ -264,4 +263,8 @@ Text Notes 5150 2800 0    14   ~ 0
 USB_CC1
 Text Notes 5150 2300 0    14   ~ 0
 USB_VBUS
+Text HLabel 5250 2400 2    50   Output ~ 0
+USB_VBUS
+Wire Wire Line
+	5250 2400 5150 2400
 $EndSCHEMATC
